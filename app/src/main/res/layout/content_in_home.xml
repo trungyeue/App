@@ -8,4 +8,17 @@
     tools:context=".InHome"
     tools:showIn="@layout/activity_in_home">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <ListView
+            android:id="@+id/listviewinhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
