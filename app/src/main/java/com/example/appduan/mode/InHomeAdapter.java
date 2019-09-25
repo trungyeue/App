@@ -39,7 +39,7 @@ public class InHomeAdapter extends BaseAdapter {
     }
 
     public class ViewHolder {
-        TextView roomType, romName, guestName, roomRate;
+        TextView roomType, romName, guestName, roomRate, arrival, departure, nights, folioNo,source;
     }
 
     @Override
@@ -47,21 +47,31 @@ public class InHomeAdapter extends BaseAdapter {
         ViewHolder holder;
         if (view == null) {
             holder = new ViewHolder();
-            LayoutInflater inflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view=inflater.inflate(layout,null);
-holder.roomType=view.findViewById(R.id.roomType);
-holder.romName=view.findViewById(R.id.romName);
-holder.guestName=view.findViewById(R.id.guestName);
-holder.roomRate=view.findViewById(R.id.roomRate);
-view.setTag(holder);
-        }else {
-holder=(ViewHolder)view.getTag();
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = inflater.inflate(layout, null);
+            holder.roomType = view.findViewById(R.id.roomType);
+            holder.romName = view.findViewById(R.id.romName);
+            holder.guestName = view.findViewById(R.id.guestName);
+            holder.roomRate = view.findViewById(R.id.roomRate);
+            holder.arrival = view.findViewById(R.id.arrival);
+            holder.departure = view.findViewById(R.id.departure);
+            holder.folioNo = view.findViewById(R.id.folioNo);
+            holder.nights = view.findViewById(R.id.night);
+            holder.source=view.findViewById(R.id.source);
+            view.setTag(holder);
+        } else {
+            holder = (ViewHolder) view.getTag();
         }
-InHome inHome=inHomes.get(i);
-holder.roomType.setText("RoomType :" + inHome.getRoomType());
-holder.romName.setText("RomName :" + inHome.getRomName());
-holder.guestName.setText("GuestName :"  + inHome.getGuestName());
-holder.roomRate.setText("RoomRate :" + inHome.getRoomRate());
+        InHome inHome = inHomes.get(i);
+        holder.roomType.setText(inHome.getRoomType());
+        holder.romName.setText(inHome.getRomName());
+        holder.guestName.setText(inHome.getGuestName());
+        holder.roomRate.setText(inHome.getRoomRate());
+        holder.arrival.setText(inHome.getArrival());
+        holder.departure.setText(inHome.getDeparture());
+        holder.folioNo.setText("Res :"+inHome.getfolioNo());
+        holder.nights.setText("("+inHome.getNights()+"night)");
+        holder.source.setText(inHome.getSource());
         return view;
     }
 }

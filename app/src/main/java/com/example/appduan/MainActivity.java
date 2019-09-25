@@ -12,10 +12,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 Button inHome;
+TextView DoangThu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,13 @@ Button inHome;
 
             }
         });
+DoangThu=findViewById(R.id.DoanhThu);
+DoangThu.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(MainActivity.this,DoanhThu.class));
+    }
+});
        }
 
     @Override

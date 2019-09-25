@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,15 +23,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="59dp"
                         android:layout_height="71dp"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:text="Logout" />
+                        android:text="Logout"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="279dp"
@@ -42,12 +42,12 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:layout_width="50dp"
                         android:id="@+id/reset1"
-                        android:layout_marginLeft="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ic_refresh_black_24dp"
-                        android:layout_height="70dp" />
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_refresh_black_24dp" />
                 </LinearLayout>
 
                 <androidx.appcompat.widget.Toolbar
@@ -63,31 +63,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
+            android:layout_height="wrap_content"
             android:gravity="center"
 
-            android:layout_height="wrap_content">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/inhome"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-                android:textAllCaps="false"
-                android:text="In-House" />
+                android:text="In-House"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="100dp"
-                android:textAllCaps="false"
+                android:layout_height="70dp"
                 android:text="Arrival"
-                android:layout_height="70dp" />
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-android:textAllCaps="false"
-                android:text="Booking" />
+                android:text="Booking"
+                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button6"
@@ -97,5 +97,194 @@ android:textAllCaps="false"
                 android:textAllCaps="false"></Button>
 
         </LinearLayout>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="272dp"
+                android:id="@+id/DoanhThu"
+                android:layout_height="wrap_content"
+                android:text="Doanh thu" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:background="@drawable/xml"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:text="Công suất phòng" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:text="Phòng trống" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:text="Đã bán" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:text="Tiền mặt" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:text="Thẻ" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:text="Chuyển khoản" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Sơ đồ đặt phòng" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/xml"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:text="Giao dịch" />
+
+            <TextView
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0" />
+        </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

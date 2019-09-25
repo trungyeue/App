@@ -98,8 +98,14 @@ TextView home;
                             inHomess.add(new com.example.appduan.mode.InHome(
                                     object.getString("roomType"),
                                     object.getString("roomName"),
+                                    object.getString("guestName"),
+                                    object.getString("roomRate"),
                                     object.getString("arrival"),
-                                    object.getString("roomRate")
+                                    object.getString("departure"),
+                                    object.getString("nights"),
+                                    object.getString("roomCharge"),
+                                    object.getString("folioNo"),
+                                    object.getString("source")
                             ));
                         } catch (JSONException e) {
                             e.printStackTrace();
